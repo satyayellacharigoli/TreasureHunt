@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.satya.onlinehunt.Login"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login Page"
+        android:textAllCaps="false"
+        android:textSize="50dp"
+        android:textColor="#D78877"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="User name"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:id="@+id/username"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20dp"
+        android:id="@+id/login"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:padding="0dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="login"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+       <Button
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:text="Forget Password"
+           android:textAllCaps="false"
+           android:id="@+id/forget_password"
+           android:onClick="forget_password"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/colorPrimaryDark"
+           android:backgroundTint="@color/common_google_signin_btn_text_dark_default"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/sign_up"
+            android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

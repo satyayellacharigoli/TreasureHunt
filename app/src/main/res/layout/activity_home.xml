@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.satya.onlinehunt.Home"
+    android:background="@drawable/background_color_normal"
+   >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/start"
+        android:onClick="start"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:text="Stat Game"
+        android:textAllCaps="false"
+        android:padding="0dp"
+        android:textSize="30dp"
+        android:textColor="#F77F31"
+        android:textStyle="italic"
+        android:background="@drawable/custom_button_selector"/>
+
+    <Button
+        android:id="@+id/quit_game"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:text="Quit"
+        android:textAllCaps="false"
+        android:textColor="#F77F31"
+        android:textSize="30dp"
+        android:padding="0dp"
+        android:textStyle="italic"
+        android:background="@drawable/custom_button_selector"
+        android:layout_below="@+id/help_game"
+        android:layout_alignStart="@+id/start"
+        android:onClick="quit_game"/>
+
+    <Button
+        android:id="@+id/help_game"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="Instructions"
+        android:textAllCaps="false"
+        android:padding="0dp"
+        android:textStyle="italic"
+        android:textColor="#F77F31"
+        android:textSize="30dp"
+        android:background="@drawable/custom_button_selector"
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:onClick="help_game"
+        />
+
+
+</RelativeLayout>

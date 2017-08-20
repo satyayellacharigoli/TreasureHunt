@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OnlineHunt</string>
+    <string name="dialog_title">Are u sure to close??</string>
+    <string name="title_activity_avloading_indicator_view">AVLoadingIndicatorView</string>
+</resources>
